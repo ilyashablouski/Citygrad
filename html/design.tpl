@@ -234,12 +234,12 @@
 				<div class="section-feedback__meta-title">Количество клубных карт ограничено.</div>
 				<div class="feedback-form-block">
 					<div class="feedback-form-block__inner">
-						<form action="#" class="feedback-form">
-							<div class="form-group"><input type="text" class="form-control" id="requestName" name="name" placeholder="ФИО" required></div>
+						<form action="#" method="post" class="feedback-form">
+							<div class="form-group"><input type="text" class="form-control" id="requestNameFull" name="nameFull" placeholder="ФИО" required></div>
 							<div class="form-group"><input type="text" class="form-control" id="requestNameLatin" name="nameLatin" placeholder="Имя латиницей (для указания на вашей карте)" required></div>
 							<div class="form-group"><input type="email" class="form-control" id="requestEmail" name="email" placeholder="Email" required></div>
 							<div class="form-group"><input type="tel" class="form-control" id="requestPhone" name="phone" placeholder="Телефон" required></div>
-							<div class="form-group is-last"><input type="text" class="form-control" id="requestProfession" name="Profession" placeholder="Ваша профессия" required>
+							<div class="form-group is-last"><input type="text" class="form-control" id="requestProfession" name="profession" placeholder="Ваша профессия">
 								<span class="form-control__subtext">необязательно</span>
 							</div>
 
@@ -247,7 +247,7 @@
 								<span class="form-check__title">Пол</span>
 
 								<label class="form-check__label">
-									<input class="form-check__input " type="radio" name="gender" value="1" id="gender_male" checked>
+									<input class="form-check__input " type="radio" name="gender" value="male" id="gender_male" checked>
 
 									<span class="form-check__text">
 										мужской
@@ -255,7 +255,7 @@
 								</label>
 
 								<label class="form-check__label">
-									<input class="form-check__input " type="radio" name="gender" value="2" id="gender_female">
+									<input class="form-check__input " type="radio" name="gender" value="female" id="gender_female">
 
 									<span class="form-check__text">
 										женский
@@ -271,7 +271,7 @@
 							</div>
 
 							<div class="submit-block">
-								<button name="checkout" type="submit" class="submit-btn">Оставить заявку</button>
+								<button name="submit" type="submit" class="submit-btn">Оставить заявку</button>
 							</div>
 
 							<div class="form__meta">Ваша заявка будет рассмотрена в ближайшее время</div>
@@ -326,7 +326,6 @@
 		</div>
 	</section>
 
-
 	<section class="section-hall-info">
 		<div class="section-hall-info__inner">
 			<div class="section-hall-info__text">
@@ -368,7 +367,7 @@
 	<section class="section-ask">
 		<div class="wrapper">
 			<div class="feedback-form-block">
-				<form action="#" class="feedback-form">
+				<form action="#" method="post" class="feedback-form">
 					<div class="feedback-form-block__inner">
 
 						<div class="feedback-form__avatar-info">
@@ -381,16 +380,16 @@
 								</div>
 							</div>
 						</div>
-						<div class="form-group"><input type="text" class="form-control" id="requestName" name="name" placeholder="ФИО" required></div>
-						<div class="form-group"><input type="text" class="form-control" id="requestNameRus" name="nameRus" placeholder="Имя" required></div>
+						<div class="form-group"><input type="text" class="form-control" id="requestNameFull" name="nameFull" placeholder="ФИО" required></div>
+						<div class="form-group"><input type="text" class="form-control" id="requestName" name="name" placeholder="Имя" required></div>
 						<div class="form-group"><input type="email" class="form-control" id="requestEmail" name="email" placeholder="Email" required></div>
 						<div class="form-group"><input type="tel" class="form-control" id="requestPhone" name="phone" placeholder="Телефон" required></div>
-						<div class="form-group is-last"><input type="text" class="form-control" id="requestQuestion" name="Question" placeholder="Вопрос" required>
+						<div class="form-group is-last"><input type="text" class="form-control" id="requestQuestion" name="question" placeholder="Вопрос" required>
 						</div>
 					</div>
 
 					<div class="submit-block">
-						<button name="checkout" type="submit" class="submit-btn">Задать вопрос</button>
+						<button name="submit" type="submit" class="submit-btn">Задать вопрос</button>
 					</div>
 				</form>
 			</div>
@@ -400,3 +399,13 @@
 		</div>
 	</section>
 </div>
+
+
+<a data-fancybox data-src="#popup-window" href="javascript:;" class="js-popup-open-btn"></a>
+
+<div style="display: none;" id="popup-window" class="fancybox-popup">
+	<h3 class="fancybox-popup__title">Спасибо!</h3>
+	<p class="fancybox-popup__text">Ваша заявка принята.</p>
+</div>
+
+

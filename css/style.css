@@ -3500,6 +3500,22 @@ a:hover .entertainment__nav-link-text,
  *
 */
 
+.fancybox-popup {
+  border-radius: 10px;
+}
+
+.fancybox-popup__title {
+  font-size: 34px;
+}
+
+.fancybox-popup__text {
+  font-size: 30px;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  padding: 5px;
+}
+
 .block-logo {
   text-align: center;
 }
